@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    
+    <Party partyId="usps" partyTypeId="PARTY_GROUP"/>
+    <PartyGroup partyId="usps" groupName="U.S. Postal Services"/>
+    <PartyRole partyId="usps" roleTypeId="CARRIER" fromDate="2001-01-01 00:00:00.0"/>
+    
+    <ShipmentGatewayConfigType shipmentGatewayConfTypeId="usps" hasTable="N" description="USPS Shipment Gateway"/>
+    <ShipmentGatewayConfig shipmentGatewayConfigId="usps" shipmentGatewayConfTypeId="usps" description="USPS Config"/>
+    <ShipmentGatewayUsps shipmentGatewayConfigId="usps" connectUrl="http://production.shippingapis.com/ShippingAPITest.dll" connectUrlLabels="http://production.shippingapis.com/ShippingAPITest.dll" connectTimeout="60" accessUserId="000000000000" accessPassword="999999999999" maxEstimateWeight="70" test="N"/>
+    
+    <!-- USPS Data -->
+    <!-- For USPS, only certain container types are allowed for rate estimates of Priority or Express service codes -->
+    <CarrierShipmentMethod partyId="usps" roleTypeId="CARRIER" shipmentMethodTypeId="STANDARD" sequenceNumber="7" carrierServiceCode="Parcel"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FIRST_CLASS" partyId="usps" roleTypeId="CARRIER" sequenceNumber="01" carrierServiceCode="FIRST CLASS"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FC_INTERNATIONAL" partyId="usps" roleTypeId="CARRIER" sequenceNumber="02" carrierServiceCode="FIRST CLASS"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="PRIORITY" partyId="usps" roleTypeId="CARRIER" sequenceNumber="03" carrierServiceCode="PRIORITY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="PR_INTERNATIONAL" partyId="usps" roleTypeId="CARRIER" sequenceNumber="04" carrierServiceCode="PRIORITY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="EXPRESS" partyId="usps" roleTypeId="CARRIER" sequenceNumber="05" carrierServiceCode="EXPRESS"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="EXP_INTERNATIONAL" partyId="usps" roleTypeId="CARRIER" sequenceNumber="06" carrierServiceCode="EXPRESS"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="MEDIA_MAIL" partyId="FEDEX" roleTypeId="CARRIER" sequenceNumber="07" carrierServiceCode="MEDIA"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="STANDARD_POST" partyId="FEDEX" roleTypeId="CARRIER" sequenceNumber="08" carrierServiceCode="STANDARD POST"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="LIBRARY" partyId="FEDEX" roleTypeId="CARRIER" sequenceNumber="09" carrierServiceCode="LIBRARY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="INT_EXPRESS" partyId="usps" roleTypeId="CARRIER" sequenceNumber="10" carrierServiceCode="INTEXPRESS"/>
+    <!-- End of USPS Data-->
+</entity-engine-xml>

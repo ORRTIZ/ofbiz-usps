@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="usps_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="usps_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="usps_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="usps_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="usps_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="usps_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="usps_ADMIN"/>
+</entity-engine-xml>
