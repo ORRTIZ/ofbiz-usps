@@ -48,5 +48,6 @@
     <CarrierShipmentMethod shipmentMethodTypeId="INT_EXPRESS" partyId="usps" roleTypeId="CARRIER" sequenceNumber="10" carrierServiceCode="INTEXPRESS"/>
     <!-- End of USPS Data-->
     
-    <CustomMethod customMethodId="SHIP_EST_USPS_INT" customMethodTypeId="SHIP_EST" customMethodName="uspsInternationalRateInquire"   description="USPS rate estimate international"/>
+    <CustomMethod customMethodId="SHIP_EST_usps"     customMethodTypeId="SHIP_EST" customMethodName="uspsRateInquire"   description="USPS rate estimate"/>
+    <CustomMethod customMethodId="SHIP_EST_usps_INT" customMethodTypeId="SHIP_EST" customMethodName="uspsInternationalRateInquire"   description="USPS rate estimate international"/>
 </entity-engine-xml>
