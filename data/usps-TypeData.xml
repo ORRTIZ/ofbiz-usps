@@ -4,6 +4,10 @@
     <Party partyId="usps" partyTypeId="PARTY_GROUP"/>
     <PartyGroup partyId="usps" groupName="U.S. Postal Services"/>
     <PartyRole partyId="usps" roleTypeId="CARRIER" fromDate="2001-01-01 00:00:00.0"/>
+    <PartyRole partyId="usps" roleTypeId="SUPPLIER" fromDate="2001-01-01 00:00:00.0"/>
+    <PartyRole partyId="usps" roleTypeId="VENDOR" fromDate="2001-01-01 00:00:00.0"/>
+    <PartyRole partyId="usps" roleTypeId="BILL_FROM_VENDOR" fromDate="2001-01-01 00:00:00.0"/>
+    <PartyRole partyId="usps" roleTypeId="SHIP_FROM_VENDOR" fromDate="2001-01-01 00:00:00.0"/>
     
     <ShipmentGatewayConfigType shipmentGatewayConfTypeId="usps" hasTable="N" description="USPS Shipment Gateway"/>
     <ShipmentGatewayConfig shipmentGatewayConfigId="usps" shipmentGatewayConfTypeId="usps" description="USPS Config"/>
