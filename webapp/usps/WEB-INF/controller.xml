@@ -68,7 +68,7 @@
     </request-map>
     <request-map uri="UpdateShipmentGatewayConfig">
         <security https="true" auth="true"/>
-        <event type="service" invoke="updateShipmentGatewayConfigUps"/>
+        <event type="service" invoke="updateShipmentGatewayConfigUsps"/>
         <response name="success" type="view" value="EditShipmentGatewayConfig"/>
         <response name="error" type="view" value="EditShipmentGatewayConfig"/>
     </request-map>
