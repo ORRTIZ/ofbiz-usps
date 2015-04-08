@@ -40,5 +40,7 @@
         server="default-server"
         location="webapp/usps"
         base-permission="OFBTOOLS,usps"
-        mount-point="/usps"/>
+        mount-point="/usps"
+        menu-name="secondary"
+        />
 </ofbiz-component>
