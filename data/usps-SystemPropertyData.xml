@@ -20,5 +20,47 @@
 -->
 
 <entity-engine-xml>
-
+    
+    <SystemProperty
+    description="USPS configuration indicator" 
+    systemPropertyId="shipment.usps.shipping" 
+    systemPropertyValue="Y" 
+    systemResourceId="usps"/>
+    
+    <SystemProperty
+    description="USPS Testing indicator, currently only used for printing labels since USPS doesn't use a separate url for testing" 
+    systemPropertyId="shipment.usps.test" 
+    systemPropertyValue="Y" 
+    systemResourceId="usps"/>
+    
+    <SystemProperty
+    description="USPS Connection URL" 
+    systemPropertyId="shipment.usps.connect.url" 
+    systemPropertyValue="http://production.shippingapis.com/ShippingAPITest.dll" 
+    systemResourceId="usps"/>
+    
+    <SystemProperty
+    description="USPS Url for labels differs in that the url is the same whether testing or not" 
+    systemPropertyId="shipment.usps.connect.url.labels" 
+    systemPropertyValue="http://production.shippingapis.com/ShippingAPITest.dll" 
+    systemResourceId="usps"/>
+    
+    <SystemProperty
+    description="USPS Connection timeout in seconds" 
+    systemPropertyId="shipment.usps.connect.timeout" 
+    systemPropertyValue="60" 
+    systemResourceId="usps"/>
+    
+    <SystemProperty
+    description="USPS Access UserId" 
+    systemPropertyId="shipment.usps.access.userid" 
+    systemPropertyValue="000000000000" 
+    systemResourceId="usps"/>
+    
+    <SystemProperty
+    description="USPS Access Password" 
+    systemPropertyId="shipment.usps.access.password" 
+    systemPropertyValue="999999999999" 
+    systemResourceId="usps"/>
+    
 </entity-engine-xml>
