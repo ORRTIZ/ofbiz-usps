@@ -28,7 +28,7 @@ under the License.
                 <set field="tabButtonItem" value="gatewayConfiguration"/> 
                 
                 <set field="shipmentGatewayConfigId" from-field="activeApp"/>
-                <entity-one entity-name="ShipmentGatewayUsps" value-field="shipmentGatewayUsps">
+                <entity-one entity-name="ShipmentGatewayUsps" value-field="shipmentGateway">
                     <field-map field-name="shipmentGatewayConfigId" from-field="parameters.shipmentGatewayConfigId"/>
                 </entity-one>
             </actions>
