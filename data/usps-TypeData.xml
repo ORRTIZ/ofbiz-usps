@@ -47,4 +47,6 @@
     <CarrierShipmentMethod shipmentMethodTypeId="LIBRARY" partyId="FEDEX" roleTypeId="CARRIER" sequenceNumber="09" carrierServiceCode="LIBRARY"/>
     <CarrierShipmentMethod shipmentMethodTypeId="INT_EXPRESS" partyId="usps" roleTypeId="CARRIER" sequenceNumber="10" carrierServiceCode="INTEXPRESS"/>
     <!-- End of USPS Data-->
+    
+    <CustomMethod customMethodId="SHIP_EST_USPS_INT" customMethodTypeId="SHIP_EST" customMethodName="uspsInternationalRateInquire"   description="USPS rate estimate international"/>
 </entity-engine-xml>
